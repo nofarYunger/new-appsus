@@ -1,0 +1,187 @@
+.color-pallete {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 10px;
+}
+
+.red {
+    color: #E7443C
+}
+
+.note-list {
+    margin: 0 auto;
+    columns: 3;
+    column-width: 350px;
+    column-gap: 10px;
+    padding-top: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.NoteAdd {
+    padding-top: 80px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.NoteAdd form {
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+    color: #8dc5fa;
+    text-shadow: 1px 1px 2px #919191;
+    box-shadow: 0px 2px 7px #919191;
+}
+
+.NoteAdd button {
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    align-self: flex-end;
+    padding-right: 40px;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.NoteAdd button i:hover {
+    border: none;
+    background-color: #8dc5fa;
+    border-radius: 60%;
+    color: white;
+}
+
+.NoteAdd a {
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    align-self: start;
+    padding-left: 40px;
+}
+
+.NoteAdd input, select, textarea {
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: roboto-light, sans-serif;
+    box-shadow: none;
+    background-color: none;
+    border: none;
+    -moz-appearance: none;
+    outline: 0px none transparent;
+    overflow: auto;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    border-color: Transparent;
+    outline: 0px none transparent;
+    border: none;
+    overflow: auto;
+    outline: none;
+    outline: none;
+    height: 1.5rem;
+}
+
+.addTxtArea {
+    display: block;
+    background: none;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border: 0 solid transparent;
+    line-height: 1.5;
+    color: #333;
+    box-shadow: none;
+    transition: opacity 0.28s ease;
+    will-change: opacity;
+}
+
+.currView {
+    width: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    min-width: 300px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--yellow);
+    color: var(--darkblue);
+    margin: 0 2px 15px;
+    padding: 15px;
+    padding-bottom: 10px;
+    transition: opacity .4s ease-in-out;
+    -webkit-column-break-inside: avoid;
+    display: inline-block;
+}
+
+.note-bar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.card>i {
+    color: var(--darkblue);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 300px;
+}
+
+.NoteAdd form i, a {
+    color: #8dc5fa;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.NoteAdd .close-btn {
+    padding-top: 15px;
+}
+
+textarea {
+    width: 600px;
+    height: 20px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+form>*:not(button) {
+    width: 40vw;
+    height: 30px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 770px) {
+    .note-list .flex {
+        columns: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .NoteAdd {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .apps>i:first {
+        color: var(--darkblue);
+    }
+}

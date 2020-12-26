@@ -1,0 +1,30 @@
+/* ----------------email compose------------------- */
+
+.EmailCompose {
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    background-color: #fff;
+}
+
+.form-box {
+    position: fixed;
+    color: #0a0a0a;
+    background-color: var(--red);
+    width: 50%;
+    height: 75%;
+    top: 15%;
+    left: 25%;
+    padding: 1em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: stretch; */
+}
+
+.EmailCompose input, .EmailCompose textarea {
+    border-radius: unset;
+    margin-top: 2em;
+}

@@ -1,0 +1,82 @@
+/*----------------------- REPLAY FORM:-------------------------- */
+
+.reply {
+    width: 100%;
+    border-top: 1px solid var(--darkgray);
+    padding: 10px;
+}
+
+.EmailUserReply {
+    background-color: #dbd4d4;
+    padding: 15px;
+    text-shadow: 1px 1px 2px#919191;
+}
+
+.grid-form {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, min(40px));
+    row-gap: 20px;
+}
+
+.EmailUserReply input, .EmailUserReply textarea {
+    width: 100%;
+    height: 30px;
+    margin-left: 10px;
+    box-shadow: none;
+}
+
+.EmailUserReply textarea {
+    grid-row: 3/7;
+    grid-column: 1/2;
+    width: 60vw;
+    height: 300px;
+}
+
+.reply-subj {
+    grid-row: 1/4;
+    grid-column: 1/4;
+    width: 60px;
+}
+
+.reply-body {
+    grid-row: 2/5;
+    grid-column: 1/2;
+}
+
+.EmailUserReply button {
+    grid-row: 8/-1;
+    grid-column: 8/-1;
+    height: 30px;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+}
+
+.EmailUserReply button:hover {
+    box-shadow: 0px 2px 7px #919191;
+}
+
+.EmailUserReply h1 {
+    color: var(--darkgray);
+    font-family: roboto-medium;
+    grid-area: title;
+    align-self: center;
+}
+
+.EmailUserReply label {
+    font-family: roboto-light;
+    width: 80%;
+}
+
+.send.btn {
+    color: #919191;
+    background-color: #fff;
+    padding: 0 2em;
+}
+
+.send.btn:hover {
+    background-color:  var(--red);
+    color: #fff;
+}

@@ -1,0 +1,98 @@
+.AppHeader {
+    font-family: just, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    left: 0;
+}
+
+.AppHeader ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.AppHeader li {
+    float: right;
+    padding-right: 10px;
+}
+
+.AppHeader li>* {
+    float: right;
+    padding-right: 200px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .AppHeader li>* {
+        padding-right: 150px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .AppHeader li>* {
+        padding-right: 100px;
+    }
+}
+
+.AppHeader i {
+    color: var(--darkgray);
+    font-size: 30px;
+    padding: 10px;
+    color: #E7443C;
+}
+
+.AppHeader .apps li :hover {
+    background-color: rgb(248 187 47);
+    border-radius: 50%;
+}
+
+.AppHeader img {
+    height: 70px;
+}
+
+.AppHeader h1 {
+    color: rgb(189 193 198);
+    margin: 0;
+    font-size: 60px;
+    color: #e7443c;
+    position: relative;
+    top: -5px;
+}
+
+.apps-uldis li:last-child {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .apps {
+        display: block;
+    }
+    .apps-uldis {
+        transform: translate(0, 78px);
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: center;
+        background-color: #e7443c;
+        align-items: center;
+        right: 0px;
+        padding-top: 0;
+        padding: 10px;
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+        position: fixed;
+    }
+    .AppHeader i {
+        color: #F5F7F7;
+    }
+    .NoteAdd {
+        padding-top: 200px;
+    }
+    .EmailList {
+        padding-top: 60px;
+    }
+    .NoteAdd form {
+        width: 80%;
+    }
+}

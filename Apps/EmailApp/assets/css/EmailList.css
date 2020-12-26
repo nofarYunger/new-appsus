@@ -1,0 +1,160 @@
+/* ---------------------------------EMAIL LIST LAYOUT------------------------------------ */
+
+.EmailPreviewShort {
+    height: 1em;
+    cursor: pointer;
+    border: 1px solid var(--gray);
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: roboto-light, sans-serif;
+}
+
+.EmailPreviewShort:hover, .emailOpen {
+    box-shadow: 0px 2px 7px #919191;
+    position: relative;
+    z-index: 1;
+}
+
+.EmailPreviewShort .time {
+    width: 15%;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.EmailPreviewShort .body {
+    width: 75%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.EmailPreviewShort .from {
+    width: 10%;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.EmailPreviewShort .subj {
+    font-family: roboto-regular, sans-serif;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.EmailList {
+    top: 80px;
+    width: 80%;
+    right: 0;
+    margin-top: 1em;
+    position: absolute;
+}
+
+@media screen and(max-width:900px) {
+    .EmailApp-wrapper {
+        padding-top: 14em;
+    }
+    .EmailList {
+        width: 100%;
+    }
+}
+
+/* gold btn:--------- */
+
+.fa-star {
+    color: var(--emailYellow);
+}
+
+.readBtn {
+    padding: 0px 10px;
+}
+
+/* --------------------------------DETAILS------------------------------ */
+
+.EmailDetails {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.EmailDetails .emailAddress {
+    color: rgb(109, 109, 109);
+    font-family: roboto-thin;
+}
+
+.EmailDetails i:hover{
+    color: var(--red);
+}
+
+.unRead.EmailPreviewShort {
+    font-weight: bold;
+    background-color: #dbd4d4a6;
+}
+
+.EmailDetails p {
+    font-family: roboto-light, sans-serif;
+}
+
+.emailDitBtns {
+    text-align: end;
+}
+
+.fa-mail-reply:before, .fa-reply:before {
+    content: none;
+}
+
+.emailDitBtns *> {
+    height: 40px;
+}
+
+.EmailDetails h4{
+    text-align: center;
+}
+
+.reply h1 {
+    margin: 0;
+    font-family: roboto-regular;
+}
+
+.reply p {
+    margin: 0;
+}
+
+.reply{
+    border-top: 1px solid #20212426;
+}
+
+
+
+/* ---------------mobile------------------ */
+
+@media screen and (max-width:900px) {
+    .EmailPreviewShort {
+        width: 100%;
+      
+        height: max-content;
+      
+        padding-left: 5px;
+        text-align: left;
+    }
+    .EmailList {
+        width: 100%;
+    }
+    .EmailPreviewShort>* {
+        display: flex;
+        justify-content: space-between;
+    }
+    .EmailPreviewShort .time {
+        width: fit-content;
+        text-align: right;
+        margin-left: 30px;
+    }
+    
+    .EmailPreviewShort .body {
+        width: fit-content;
+        text-align: left;
+        overflow: hidden;
+        padding-right: 10px;
+    }
+    
+    .EmailPreviewShort .from {
+        width: fit-content;
+        text-align: center;
+    }
+}

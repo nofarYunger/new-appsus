@@ -1,0 +1,203 @@
+/*----------  Font Awesome  ----------*/
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url("../../fonts/fontawesome/FontAwesome.otf");
+    src: url("../../fonts/fontawesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    display: inline-block;
+    font-family: fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ------------ fonts -------------- */
+
+@font-face {
+    font-family: roboto-thin;
+    src: url('../../fonts/Roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url('../../fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url('../../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url('../../fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: sofia;
+    src: url('../../fonts/Sofia/Sofia-Regular.ttf');
+}
+
+@font-face {
+    font-family: just;
+    src: url('../../fonts/Just_Me_Again_Down_Here/JustMeAgainDownHere-Regular.ttf');
+}
+
+/* ------------------------------------------ */
+
+:root {
+    --blue: #4885ed;
+    --yellow: #f5f5689d;
+    --emailYellow: rgb(248 187 47);
+    --darkblue: rgba(4, 22, 36, 0.871);
+    --darkgray: #202124;
+    --gray: #F5F7F7;
+    --red: #e7443c;
+}
+
+body {
+    font-family: roboto-regular, sans-serif;
+    font-size: 20px;
+    color: var(--darkgray);
+    background-color: white;
+    height: 100vh;
+    /* background-color: rgb(233, 232, 232); */
+    margin: 0;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select, textarea {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: roboto-light, sans-serif;
+    box-shadow: none;
+    border: 1px solid rgb(233, 232, 232);
+    /* border-radius: 40px; */
+}
+
+input:focus, select:focus {
+    outline: none;
+    font-family: roboto-regular, sans-serif;
+}
+
+/* ---------------------------- FILTER:------------------------------- */
+
+.filter input {
+    box-shadow: none;
+    border: 1px solid rgb(233, 232, 232);
+    width: 40vw;
+    height: 30px;
+    border-radius: 40px;
+}
+
+.filter input:focus {
+    border: none;
+    background-color: rgb(233, 232, 232);
+    font-family: roboto-regular, sans-serif;
+    /* width: 40vw; */
+    height: 30px;
+}
+
+.filter .fa-search {
+    color: rgb(233, 232, 232);
+    height: 30px;
+}
+
+@media screen and (max-width:1200px){
+    .filter input {    
+        width: 30vw;  
+    }
+
+   
+}
+@media screen and (max-width:1000px){
+    .filter input {    
+        width: 25vw;  
+    }
+   
+
+}
+
+/* ----------------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: unset;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 1em;
+    cursor: pointer;
+    color: #fff;
+    width: fit-content;
+}  
+
+input {
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: var(--red);
+    transition: all 0.3s;
+}
+
+button:focus, textarea:focus, input:focus {
+    outline: none;
+}
+
+
+.filter select {
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+
+
+.EmailApp i:hover {
+    color: var(--red);
+}
+
+i {
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sus {
+    font-size: 3em;
+    padding-top: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #8dc5fa;
+    text-shadow: 1px 1px 2px#919191;
+}

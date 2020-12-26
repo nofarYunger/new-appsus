@@ -1,0 +1,72 @@
+/* -------------------------side bar--------------------------- */
+
+.EmailSideBar {
+    background-color: #e7443c;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    padding: 15px;
+    top: 80px;
+    width: 17%;
+    text-align: center;
+    color: #fff;
+    font-family: roboto-light;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.humburger {
+    width: 40px;
+    color: var(--darkgray);
+    position: fixed;
+    z-index: 15;
+    left: 5%;
+    top: 10%;
+    visibility: hidden;
+}
+
+.btn-side {
+    font-size: 1em;
+    background-color: unset;
+    color: #fff;
+    cursor: pointer;
+    border: unset;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    transition: all 0.5s;
+    align-self: center;
+}
+
+.btn-side .fas.fa-star {
+    color: #fff;
+}
+
+.addMail {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.btn-side:hover {
+    transform: scale(1.2);
+}
+
+.EmailSort {
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+    .EmailSideBar {
+        left: -30%;
+        transition: all 0.5s
+    }
+    .mainScreen .EmailSideBar {
+        left: 17%;
+    }
+    .humburger {
+        display: block;
+        visibility: visible;
+    }
+}
