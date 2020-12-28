@@ -35,7 +35,7 @@ export class _AppHeader extends React.Component {
 
 
             <header className="flex-row">
-                <span className="flex-row" ><NavLink to={'/'}> <img className="logo" src="../assets/imgs/logo.png" />  </NavLink>
+                <span className="flex-row" ><NavLink to={'/'}> <img className="logo" src="assets/imgs/logo.png" />  </NavLink>
                     <h1 className="logo">Appsus</h1> </span>
 
 
