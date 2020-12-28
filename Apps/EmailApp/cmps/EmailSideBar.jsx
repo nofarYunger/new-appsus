@@ -11,7 +11,7 @@ export function EmailSideBar({ callback }) {
                  <i className="humburger fas fa-bars"></i>
 
                 <Link to='/Email/Compose'>
-                    <div className="btn-side addMail"><i className="fas fa-envelope"></i>new mail  </div>
+                    <div className="btn-side addMail"><i className="fas fa-envelope"></i>Compose</div>
                 </Link>
                 <EmailSort onSort={callback} />
             </aside>
